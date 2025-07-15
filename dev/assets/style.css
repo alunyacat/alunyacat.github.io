@@ -141,7 +141,7 @@ nav#blogposts a .blogtitle {
 
 main {
     width: 80%;
-    max-width: 95%;
+    max-width: 600px;
     margin: 0 auto;
     padding: 0 20px;
     font-kerning: normal
@@ -313,5 +313,27 @@ main p {
 @media all and(max-width:543px) {
     body {
         font-size: 13px
+    }
+}
+
+nav#rootnav {
+    display: flex;
+    flex-flow: row wrap;
+    background: #ecebea;
+    a, a:visited {
+        color: #404040;
+    }
+    a:hover, a:focus {
+        background: #404040;
+        color: #f3f2f0;
+    }
+    a {
+        text-align: center;
+        font-weight: 600;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        padding: 0.5em 0em;
+        flex: 1 0 auto;
     }
 }
