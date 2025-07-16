@@ -319,21 +319,35 @@ main p {
 nav#rootnav {
     display: flex;
     flex-flow: row wrap;
-    background: #ecebea;
     a, a:visited {
-        color: #404040;
-    }
-    a:hover, a:focus {
-        background: #404040;
-        color: #f3f2f0;
-    }
-    a {
         text-align: center;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 0.9em;
         text-transform: uppercase;
         letter-spacing: 0.1em;
         padding: 0.5em 0em;
         flex: 1 0 auto;
+        background-color: black;
+        color: white;
+
     }
+}
+
+.subs {
+    text-decoration: none;
+    border-radius: 0.25rem;
+    padding: 0.25rem 1rem;
+    display: relative;
+    background-color: black;
+    color: white;
+    text-underline-offset: 0.2rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.625;
+}
+
+.subs:hover {
+    outline: 1px solid black;
+    outline-offset: 0.2rem;
+    background-color: #404040;
 }
